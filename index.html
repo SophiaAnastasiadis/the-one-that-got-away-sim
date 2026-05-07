@@ -83,6 +83,8 @@ tw-passage {
   padding-bottom: 200px;}
 
 .story-image {
+  display: block;
+  margin: 0 auto;
   width: 100%;
   max-width: 600px;
   height: auto;
@@ -93,20 +95,12 @@ tw-passage {
 tw-passage .story-image,
 tw-passage img.story-image,
 img.story-image {
+  display: block;
+  margin: 0 auto;
   width: 100%;
   max-width: 600px;
   height: auto;
   object-fit: cover;
-  opacity: 0.75 !important;
-  filter: blur(3px) !important;
-}
-
-.story-image-landscape {
-  width: 100%;
-  max-width: 600px;
-  height: 350px;       /* set a fixed landscape height */
-  object-fit: cover;
-  object-position: center; /* adjust to focus on a specific part of the image */
   opacity: 0.75 !important;
   filter: blur(3px) !important;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="background-general" color="orange"></tw-tag><tw-tag name="background-title-card" color="purple"></tw-tag><tw-passagedata pid="1" name="Can you tell us what happened?" tags="background-general" position="800,125" size="100,100"> [[I was attacked.]] What do I remember? I was chased down an alley. Then... God. Tough, harsh hands hammering down on me, every blow like the chime of an old bell. Is this what really happened to me? 
@@ -177,7 +171,7 @@ Can you tell me the plate number?
 
 (if: $idx is 1)[&lt;img class=&quot;story-image&quot; src=&quot;./images/attacked-scenario-image.jpg&quot; alt=&quot;scenario image&quot; /&gt;]
 (else-if: $idx is 2)[&lt;img class=&quot;story-image&quot; src=&quot;./images/drugging-scenario-image.png&quot; alt=&quot;scenario image&quot; /&gt;]
-(else:)[&lt;img class=&quot;story-image-landscape&quot; src=&quot;./images/robbery-scenario-image.jpg&quot; alt=&quot;scenario image&quot; /&gt;]
+(else:)[&lt;img class=&quot;story-image&quot; src=&quot;./images/robbery-scenario-image.jpg&quot; alt=&quot;scenario image&quot; /&gt;]
 
 (after: 2s)[(go-to: &quot;START&quot;)]</tw-passagedata><tw-passagedata pid="31" name="What colour was his jacket?" tags="background-general" position="475,725" size="100,100">(text-color: red) [What colour was his jacket?]
 
