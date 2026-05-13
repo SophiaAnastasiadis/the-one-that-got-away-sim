@@ -106,11 +106,11 @@ img.story-image {
   filter: blur(3px) !important;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-tag name="background-general" color="orange"></tw-tag><tw-tag name="background-title-card" color="purple"></tw-tag><tw-passagedata pid="1" name="Can you tell us what happened?" tags="background-general" position="800,125" size="100,100"> [[I was attacked.]] What do I remember? I was chased down an alley. Then... God. Tough, harsh hands hammering down on me, every blow like the chime of an old bell. Is this what really happened to me? 
  
-(t8n-delay: 2s) + (t8n: &quot;fade-down&quot;) [SUBMIT [[HERE]] OR CLICK RED TEXT TO CHANGE RESPONSE]</tw-passagedata><tw-passagedata pid="2" name="HERE" tags="background-general" position="900,400" size="100,100">(text-color: red) [Did you see his face?]
+(t8n-delay: 2s) + (t8n: &quot;fade-down&quot;) [SUBMIT [[HERE]] OR CLICK RED TEXT TO CHANGE RESPONSE. BEWARE: ONCE MY CHOICE IS MADE, I CAN&#39;T GO BACK.]</tw-passagedata><tw-passagedata pid="2" name="HERE" tags="background-general" position="900,400" size="100,100">(text-color: red) [Did you see his face?]
 
 [[YES]] or [[NO]]</tw-passagedata><tw-passagedata pid="3" name="I was attacked." tags="background-general" position="1400,350" size="100,100">[[I was robbed.]] What do I remember? Feeling helpless and small, like a toddler in the sand pit again, wailing over a lost toy. Idiot.
 
-(t8n-delay: 2s) + (t8n: &quot;fade-down&quot;) [SUBMIT [[HERE!]] OR CLICK RED TEXT TO CHANGE RESPONSE.]</tw-passagedata><tw-passagedata pid="4" name="I was robbed." tags="background-general" position="1475,550" size="100,100">[[I was drugged. One minute I was at a bar, then... the world went blue and gold, and all I could think about was the ringing in my ears. SUBMIT HERE.]]</tw-passagedata><tw-passagedata pid="5" name="HERE!" tags="background-general" position="1125,350" size="100,100">(text-colour:red)[What was taken?
+(t8n-delay: 2s) + (t8n: &quot;fade-down&quot;) [SUBMIT [[HERE!]] OR CLICK RED TEXT TO CHANGE RESPONSE. BEWARE: ONCE MY CHOICE IS MADE, I CAN&#39;T GO BACK.]</tw-passagedata><tw-passagedata pid="4" name="I was robbed." tags="background-general" position="1475,550" size="100,100">[[I was drugged. One minute I was at a bar, then... the world went blue and gold, and all I could think about was the ringing in my ears. SUBMIT HERE.]] BEWARE: ONCE MY CHOICE IS MADE, I CAN&#39;T GO BACK.</tw-passagedata><tw-passagedata pid="5" name="HERE!" tags="background-general" position="1125,350" size="100,100">(text-colour:red)[What was taken?
 ]
 (t8n-delay: 2s) + (t8n: &quot;fade-down&quot;) [I had a bag...]
 
@@ -121,11 +121,11 @@ img.story-image {
 (t8n-delay: 7s) + (t8n: &quot;fade-down&quot;) [CLICK [[HERE]] MOVE ON.]
 </tw-passagedata><tw-passagedata pid="6" name="YES" tags="background-general" position="475,400" size="100,100">(text-color: red) [Describe him.]
 
-(click-goto: &quot;He was wearing a hoodie&quot;, &quot;What colour was his jacket?&quot;) [He was wearing a hoodie.]
+(t8n-delay: 2s) + (t8n: &quot;fade-down&quot;) [(click-goto: &quot;Maybe he was wearing a hoodie&quot;, &quot;What colour was his jacket?&quot;) [Maybe he was wearing a hoodie.]]
 
-(click-goto: &quot;He was caucasian and tall&quot;, &quot;What colour was his jacket?&quot;) [He was caucasian and tall.]
+(t8n-delay: 4s) + (t8n: &quot;fade-down&quot;) [(click-goto: &quot;No, he was caucasian and tall&quot;, &quot;What colour was his jacket?&quot;) [No, he was caucasian and tall.]]
 
-(click-goto: &quot;He was buff and had brown hair&quot;, &quot;What colour was his jacket?&quot;) [He was buff and had brown hair.]
+(t8n-delay: 6s) + (t8n: &quot;fade-down&quot; ) [(click-goto: &quot;No, he was buff and had brown hair&quot;, &quot;What colour was his jacket?&quot;) [No, he was buff and had brown hair.]]
 
 </tw-passagedata><tw-passagedata pid="7" name="NO" tags="background-general" position="550,250" size="100,100">(text-color: red) [Are you sure?]
 
@@ -139,35 +139,75 @@ GO BACK [[HERE]] OR [[CONFIRM]]</tw-passagedata><tw-passagedata pid="8" name="I 
 
 (t8n-delay: 7s) + (t8n: &quot;fade-down&quot;) [[[Uhm...]]]</tw-passagedata><tw-passagedata pid="9" name="Uhm..." tags="background-general" position="700,475" size="100,100">I came with friends, but now that you mention it... some guy was hanging around. He kept trying to grab me and touch my waist... I felt like a piece of meat, insignificant, only to be consumed. I can&#39;t look at my reflection any more.
 
-CLICK [[HERE]] TO MOVE ON.</tw-passagedata><tw-passagedata pid="10" name="I don&#39;t think so." tags="background-general" position="0,925" size="100,100">[[Thank you for your time, you&#39;ve been a big help.]]</tw-passagedata><tw-passagedata pid="11" name="CONFIRM" tags="background-general" position="300,175" size="100,100">[[Thank you for your time.]]</tw-passagedata><tw-passagedata pid="12" name="Green" tags="background-general" position="775,675" size="100,100">The police don&#39;t seem to believe what I&#39;m saying, but they still ask me questions. Standards, routines, it&#39;s all a ploy. I don&#39;t know if --
+CLICK [[HERE]] TO MOVE ON.</tw-passagedata><tw-passagedata pid="10" name="I don&#39;t think so." tags="background-general" position="0,925" size="100,100">[[Thank you for your time, you&#39;ve been a big help.]]
 
-[[Did he say anything to you?]]</tw-passagedata><tw-passagedata pid="13" name="Was there a jacket? Uhm, maybe brown?" tags="background-general" position="650,800" size="100,100">[[Did he say anything to you?]] </tw-passagedata><tw-passagedata pid="14" name="He wasn&#39;t wearing one" tags="background-general" position="300,800" size="100,100">[[Thank you for your time.]]</tw-passagedata><tw-passagedata pid="15" name="Did he say anything to you?" tags="background-general" position="825,800" size="100,100">[[He might have... I think he said &quot;Sorry.&quot;]] He looked scared, like he was being forced to do what he did. His voice was so fragile as he did it that for a second I thought it was my own voice, my own breath feathering over the skin of my neck...
+That&#39;s the end of the questions, it seems. I can only hope that I did the right thing, that I remembered everything and that the guy that did this to me will be caught. I can&#39;t have been wrong, right?
+
+(after: 7s) [Wait! (click-goto: &quot;I need to clarify some things.&quot;, &quot;Can you tell us what happened?&quot;) [I need to clarify some things.]]</tw-passagedata><tw-passagedata pid="11" name="CONFIRM" tags="background-general" position="300,175" size="100,100">[[Thank you for your time.]]
+
+That&#39;s the end of the questions, it seems. I can only hope that I did the right thing, that I remembered everything and that the guy that did this to me will be caught. I can&#39;t have been wrong, right?
+
+(after: 7s) [Wait! (click-goto: &quot;I need to clarify some things.&quot;, &quot;Can you tell us what happened?&quot;) [I need to clarify some things.]]</tw-passagedata><tw-passagedata pid="12" name="Green" tags="background-general" position="775,675" size="100,100">The police don&#39;t seem to believe what I&#39;m saying, but they still ask me questions. Standards, routines, it&#39;s all a ploy. I don&#39;t know if --
+
+[[Did he say anything to you?]]</tw-passagedata><tw-passagedata pid="13" name="Was there a jacket? Uhm, maybe brown?" tags="background-general" position="650,800" size="100,100">The police don&#39;t seem to believe what I&#39;m saying, but they still ask me questions. Standards, routines, it&#39;s all a ploy. I don&#39;t know if --
+
+[[Did he say anything to you?]] </tw-passagedata><tw-passagedata pid="14" name="He wasn&#39;t wearing one" tags="background-general" position="300,800" size="100,100">[[Thank you for your time.]]
+
+That&#39;s the end of the questions, it seems. I can only hope that I did the right thing, that I remembered everything and that the guy that did this to me will be caught. I can&#39;t have been wrong, right?
+
+(after: 7s) [Wait! (click-goto: &quot;I need to clarify some things.&quot;, &quot;Can you tell us what happened?&quot;) [I need to clarify some things.]]</tw-passagedata><tw-passagedata pid="15" name="Did he say anything to you?" tags="background-general" position="825,800" size="100,100">[[He might have... I think he said &quot;Sorry.&quot;]] He looked scared, like he was being forced to do what he did. His voice was so fragile as he did it that for a second I thought it was my own voice, my own breath feathering over the skin of my neck...
 
 (t8n-delay: 5s) + (t8n: &quot;fade-down&quot;) [Or maybe... [[He said &quot;serves you right, bitch.&quot;]] Maybe he became angrier the longer he looked at me, as though my very being was an assault to //him//. Maybe he targeted me because of who I am, what I am, the way I look...]
 
 (t8n-delay: 15s) + (t8n: &quot;fade-down&quot;) [Or maybe... gosh. Maybe he said... (click-goto: &quot;No, nothing&quot;, &quot;NO&quot;) [No, nothing]]
-</tw-passagedata><tw-passagedata pid="16" name="He said &quot;serves you right, bitch.&quot;" tags="background-general" position="850,950" size="100,100">[[And then what happened?]]</tw-passagedata><tw-passagedata pid="17" name="He might have... I think he said &quot;Sorry.&quot;" tags="background-general" position="1175,950" size="100,100">[[And then what happened?]] </tw-passagedata><tw-passagedata pid="18" name="And then what happened?" tags="background-general" position="775,1200" size="100,100">[[He ran off.]]
+</tw-passagedata><tw-passagedata pid="16" name="He said &quot;serves you right, bitch.&quot;" tags="background-general" position="850,950" size="100,100">The police officer is a fat, balding man with the same knobby hands as my father... Oh god. What are my parents going to think? Am I doing the right thing by reporting this?
 
-[[I don&#39;t remember.]]</tw-passagedata><tw-passagedata pid="19" name="He ran off." tags="background-general" position="1000,1425" size="100,100">To his car?
+[[And then what happened?]]</tw-passagedata><tw-passagedata pid="17" name="He might have... I think he said &quot;Sorry.&quot;" tags="background-general" position="1175,950" size="100,100">The police officer is a fat, balding man with the same knobby hands as my father... Oh god. What are my parents going to think? Am I doing the right thing by reporting this?
 
-[[Was there a car?]]
+[[And then what happened?]]</tw-passagedata><tw-passagedata pid="18" name="And then what happened?" tags="background-general" position="775,1200" size="100,100">[Maybe... [[He ran off.]]]
 
-[[Yeah.]] 
+(t8n-delay: 2s) + (t8n: &quot;fade-down&quot;) [Or maybe... [[I don&#39;t remember.]]]</tw-passagedata><tw-passagedata pid="19" name="He ran off." tags="background-general" position="1000,1425" size="100,100">To his car?
 
-[[No, there was no car.]]</tw-passagedata><tw-passagedata pid="20" name="I don&#39;t remember." tags="background-general" position="525,1025" size="100,100">[[Thank you for your time.]]</tw-passagedata><tw-passagedata pid="21" name="Was there a car?" tags="background-general" position="375,2050" size="100,100">A grey ford sedan was spotted. [[Thank you for your time, you&#39;ve been a big help.]] </tw-passagedata><tw-passagedata pid="22" name="No, there was no car." tags="background-general" position="625,1300" size="100,100">[[Thank you for your time.]]</tw-passagedata><tw-passagedata pid="23" name="Yeah." tags="background-general" position="475,1450" size="100,100">What model was it?
+(t8n-delay: 2s) + (t8n: &quot;fade-down&quot;) [Umm... [[Was there a car?]]]
 
-A grey ford sedan.
+(t8n-delay: 5s) + (t8n: &quot;fade-down&quot;) [Actually... [[Yeah.]] There was a car.]
 
-Can you tell me the plate number?
+(t8n-delay: 10s) + (t8n: &quot;fade-down&quot;) [Ugh... I think... [[No, there was no car.]]]</tw-passagedata><tw-passagedata pid="20" name="I don&#39;t remember." tags="background-general" position="525,1025" size="100,100">[[Thank you for your time.]]
 
-[[Yes, I can.]] OR [[No, I can&#39;t.]]</tw-passagedata><tw-passagedata pid="24" name="Yes, I can." tags="background-general" position="300,1475" size="100,100">What is the plate number? (input: bind $plateNumber, &quot;Enter plate number here&quot;)
+That&#39;s the end of the questions, it seems. I can only hope that I did the right thing, that I remembered everything and that the guy that did this to me will be caught. I can&#39;t have been wrong, right?
+
+(after: 7s) [Wait! (click-goto: &quot;I need to clarify some things.&quot;, &quot;Can you tell us what happened?&quot;) [I need to clarify some things.]]</tw-passagedata><tw-passagedata pid="21" name="Was there a car?" tags="background-general" position="375,2050" size="100,100">(text-colour:red) [A grey ford sedan was spotted.] [[Thank you for your time, you&#39;ve been a big help.]] 
+
+That&#39;s the end of the questions, it seems. I can only hope that I did the right thing, that I remembered everything and that the guy that did this to me will be caught. I can&#39;t have been wrong, right?
+
+(after: 7s) [Wait! (click-goto: &quot;I need to clarify some things.&quot;, &quot;Can you tell us what happened?&quot;) [I need to clarify some things.]]</tw-passagedata><tw-passagedata pid="22" name="No, there was no car." tags="background-general" position="625,1300" size="100,100">[[Thank you for your time.]]
+
+That&#39;s the end of the questions, it seems. I can only hope that I did the right thing, that I remembered everything and that the guy that did this to me will be caught. I can&#39;t have been wrong, right?
+
+(after: 7s) [Wait! (click-goto: &quot;I need to clarify some things.&quot;, &quot;Can you tell us what happened?&quot;) [I need to clarify some things.]]</tw-passagedata><tw-passagedata pid="23" name="Yeah." tags="background-general" position="475,1450" size="100,100">(text-colour:red) [What model was it?]
+
+(t8n-delay: 2s) + (t8n: &quot;fade-down&quot;) [A grey ford sedan.]
+
+(t8n-delay: 4s) + (t8n: &quot;fade-down&quot;) [(text-colour:red)[Can you tell me the plate number?]
+]
+(t8n-delay: 6s) + (t8n: &quot;fade-down&quot;) [[[Yes, I can.]] OR [[No, I can&#39;t.]]]</tw-passagedata><tw-passagedata pid="24" name="Yes, I can." tags="background-general" position="350,1525" size="100,100">What is the plate number? (input: bind $plateNumber, &quot;Enter plate number here&quot;)
 
 (link-repeat: &quot;Confirm&quot;)[
     For confirmation, it&#39;s $plateNumber?
 
-[[Yes, that&#39;s right.]]]</tw-passagedata><tw-passagedata pid="25" name="No, I can&#39;t." tags="background-general" position="450,1275" size="100,100">[[Thank you for your time.]]</tw-passagedata><tw-passagedata pid="26" name="Yes, that&#39;s right." tags="background-general" position="375,1800" size="100,100">[[Thank you for your time, you&#39;ve been a big help.]]</tw-passagedata><tw-passagedata pid="27" name="Thank you for your time." tags="" position="125,825" size="100,100">&lt;img class=&quot;story-image-end&quot; src=&quot;./images/end-title-card-one.png&quot; alt=&quot;an example&quot; /&gt;
+(t8n-delay: 2s) + (t8n: &quot;fade-down&quot;) [[[Yes, that&#39;s right.]]]]</tw-passagedata><tw-passagedata pid="25" name="No, I can&#39;t." tags="background-general" position="450,1275" size="100,100">[[Thank you for your time, you&#39;ve been a big help.]]
 
-(click-goto: &quot;Make another report&quot;, &quot;Title Card&quot;) [Make another report?]</tw-passagedata><tw-passagedata pid="28" name="Thank you for your time, you&#39;ve been a big help." tags="" position="150,1675" size="100,100">&lt;img class=&quot;story-image-end&quot; src=&quot;./images/end-title-card-two.png&quot; alt=&quot;an example&quot; /&gt;</tw-passagedata><tw-passagedata pid="29" name="START" tags="background-general" position="1375,200" size="100,100">The police station is cold and vaguely damp. There&#39;s an off-shot stench of last week&#39;s burnt coffee and it&#39;s singeing the inside of my nostrils. My memory is fuzzy and insubstantial, but the detective is peering at me with beady eyes that I can&#39;t ignore...
+That&#39;s the end of the questions, it seems. I can only hope that I did the right thing, that I remembered everything and that the guy that did this to me will be caught. I can&#39;t have been wrong, right?
+
+(after: 7s) [Wait! (click-goto: &quot;I need to clarify some things.&quot;, &quot;Can you tell us what happened?&quot;) [I need to clarify some things.]]</tw-passagedata><tw-passagedata pid="26" name="Yes, that&#39;s right." tags="background-general" position="275,1275" size="100,100">[[Thank you for your time.]]
+
+That&#39;s the end of the questions, it seems. I can only hope that I did the right thing, that I remembered everything and that the guy that did this to me will be caught. I can&#39;t have been wrong, right?
+
+(after: 7s) [Wait! (click-goto: &quot;I need to clarify some things.&quot;, &quot;Can you tell us what happened?&quot;) [I need to clarify some things.]]</tw-passagedata><tw-passagedata pid="27" name="Thank you for your time." tags="" position="125,825" size="100,100">&lt;img class=&quot;story-image-end&quot; src=&quot;./images/end-title-card-one.png&quot; alt=&quot;an example&quot; /&gt;
+
+(click-goto: &quot;Make another report&quot;, &quot;Title Card&quot;) [Make another report?]</tw-passagedata><tw-passagedata pid="28" name="Thank you for your time, you&#39;ve been a big help." tags="" position="150,1675" size="100,100">&lt;img class=&quot;story-image-end&quot; src=&quot;./images/end-title-card-two.png&quot; alt=&quot;an example&quot; /&gt;
+
+(click-goto: &quot;Make another report&quot;, &quot;Title Card&quot;) [Make another report?]</tw-passagedata><tw-passagedata pid="29" name="START" tags="background-general" position="1375,200" size="100,100">The police station is cold and vaguely damp. There&#39;s an off-shot stench of last week&#39;s burnt coffee and it&#39;s singeing the inside of my nostrils. My memory is fuzzy and insubstantial, but the detective is peering at me with beady eyes that I can&#39;t ignore...
 
 [[Can you tell us what happened?]] </tw-passagedata><tw-passagedata pid="30" name="make a report" tags="" position="575,75" size="100,100">
 (set: $idx to (random: 1, 3))
@@ -184,7 +224,7 @@ Can you tell me the plate number?
 
 (t8n-delay: 6s) + (t8n: &quot;fade-down&quot;) [[[He wasn&#39;t wearing one]]]</tw-passagedata><tw-passagedata pid="32" name="Title Card" tags="background-title-card" position="800,0" size="100,100">(text-style:&quot;bold&quot;, &quot;blur&quot;) +(text-colour:red) [The One That Got Away
 ]
-(text-colour:red)[Rules:] This is a police report simulator. Look at the image, then answer the police&#39;s questions and try to catch the perpetrator. Be warned... 
+(text-colour:red)[Rules:] This is a police report simulator. You will be shown one of three scenario images. Look at the image, figure out what happened, then answer the police&#39;s questions and try to catch the perpetrator. Be warned... 
 
 (text-style:&quot;blur&quot;)[Your memory is not as it seems.
 ]
