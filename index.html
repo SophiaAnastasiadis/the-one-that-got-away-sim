@@ -149,17 +149,17 @@ That&#39;s the end of the questions, it seems. I can only hope that I did the ri
 
 (after: 7s) [Wait! (click-goto: &quot;I need to clarify some things.&quot;, &quot;Can you tell us what happened?&quot;) [I need to clarify some things.]]</tw-passagedata><tw-passagedata pid="12" name="Green" tags="background-general" position="775,675" size="100,100">The police don&#39;t seem to believe what I&#39;m saying, but they still ask me questions. Standards,(text-style:&quot;blur&quot;)[ routines, it&#39;s all a ploy.] (text-style:&quot;blurrier&quot;)[I don&#39;t know if --]
 
-[[Did he say anything to you?]]</tw-passagedata><tw-passagedata pid="13" name="Was there a jacket? Uhm, maybe brown?" tags="background-general" position="650,800" size="100,100">The police don&#39;t seem to believe what I&#39;m saying, but they still ask me questions. Standards, routines, it&#39;s all a ploy. I don&#39;t know if --
+[[Did he say anything to you?]]</tw-passagedata><tw-passagedata pid="13" name="Was there a jacket? Uhm, maybe brown?" tags="background-general" position="650,800" size="100,100">The police don&#39;t seem to believe what I&#39;m saying, but they still ask me questions. Standards, (text-style:&quot;blur&quot;)[routines, it&#39;s all a ploy.] (text-style:&quot;blurrier&quot;)[I don&#39;t know if --]
 
 [[Did he say anything to you?]] </tw-passagedata><tw-passagedata pid="14" name="He wasn&#39;t wearing one" tags="background-general" position="300,800" size="100,100">[[Thank you for your time.]]
 
 That&#39;s the end of the questions, it seems. I can only hope that I did the right thing, that I remembered everything and that the guy that did this to me will be caught. I can&#39;t have been wrong, right?
 
-(after: 7s) [Wait! (click-goto: &quot;I need to clarify some things.&quot;, &quot;Can you tell us what happened?&quot;) [I need to clarify some things.]]</tw-passagedata><tw-passagedata pid="15" name="Did he say anything to you?" tags="background-general" position="825,800" size="100,100">[[He might have... I think he said &quot;Sorry.&quot;]] He looked scared, like he was being forced to do what he did. His voice was so fragile as he did it that for a second I thought it was my own voice, my own breath feathering over the skin of my neck...
+(after: 7s) [Wait! (click-goto: &quot;I need to clarify some things.&quot;, &quot;Can you tell us what happened?&quot;) [I need to clarify some things.]]</tw-passagedata><tw-passagedata pid="15" name="Did he say anything to you?" tags="background-general" position="825,800" size="100,100">[[He might have... I think he said &quot;Sorry.&quot;]] (text-style:&quot;blur&quot;)[He looked scared], like he was being forced to do what he did. His voice was (text-style:&quot;blur&quot;)[so fragile as he did it] that for a second I thought it was my own voice, (text-style:&quot;blurrier&quot;)[my own breath feathering over the skin of my neck...
+]
+(t8n-delay: 5s) + (t8n: &quot;fade-down&quot;) [Or maybe... [[He said &quot;serves you right, bitch.&quot;]] Maybe he became angrier the longer he looked at me, as though my very being was an assault to ~~him~~. (text-style:&quot;blur&quot;)[Maybe he targeted me because of who I am, what I am, the way I look...]]
 
-(t8n-delay: 5s) + (t8n: &quot;fade-down&quot;) [Or maybe... [[He said &quot;serves you right, bitch.&quot;]] Maybe he became angrier the longer he looked at me, as though my very being was an assault to //him//. Maybe he targeted me because of who I am, what I am, the way I look...]
-
-(t8n-delay: 15s) + (t8n: &quot;fade-down&quot;) [Or maybe... gosh. Maybe he said... (click-goto: &quot;No, nothing&quot;, &quot;NO&quot;) [No, nothing]]
+(t8n-delay: 15s) + (t8n: &quot;fade-down&quot;) [Or maybe... gosh. (text-style:&quot;blurrier&quot;)[Maybe he said...] (click-goto: &quot;No, nothing&quot;, &quot;NO&quot;) [No, nothing]]
 </tw-passagedata><tw-passagedata pid="16" name="He said &quot;serves you right, bitch.&quot;" tags="background-general" position="850,950" size="100,100">The police officer is a fat, balding man with the same knobby hands as my father... Oh god. What are my parents going to think? Am I doing the right thing by reporting this?
 
 [[And then what happened?]]</tw-passagedata><tw-passagedata pid="17" name="He might have... I think he said &quot;Sorry.&quot;" tags="background-general" position="1175,950" size="100,100">The police officer is a fat, balding man with the same knobby hands as my father... Oh god. What are my parents going to think? Am I doing the right thing by reporting this?
@@ -186,15 +186,15 @@ That&#39;s the end of the questions, it seems. I can only hope that I did the ri
 
 (after: 7s) [Wait! (click-goto: &quot;I need to clarify some things.&quot;, &quot;Can you tell us what happened?&quot;) [I need to clarify some things.]]</tw-passagedata><tw-passagedata pid="23" name="Yeah." tags="background-general" position="475,1450" size="100,100">(text-colour:red) [What model was it?]
 
-(t8n-delay: 2s) + (t8n: &quot;fade-down&quot;) [A grey ford sedan.]
+(t8n-delay: 2s) + (t8n: &quot;fade-down&quot;) [A grey ford sedan. I&#39;m sure of it. At least, I think I am. (after: 4s) + (replace: &quot;think&quot;) [(text-style:&quot;blurrier&quot;)[hope]]]
 
-(t8n-delay: 4s) + (t8n: &quot;fade-down&quot;) [(text-colour:red)[Can you tell me the plate number?]
+(t8n-delay: 6s) + (t8n: &quot;fade-down&quot;) [(text-colour:red)[Can you tell me the plate number?]
 ]
-(t8n-delay: 6s) + (t8n: &quot;fade-down&quot;) [[[Yes, I can.]] OR [[No, I can&#39;t.]]]</tw-passagedata><tw-passagedata pid="24" name="Yes, I can." tags="background-general" position="350,1525" size="100,100">What is the plate number? (input: bind $plateNumber, &quot;Enter plate number here&quot;)
+(t8n-delay: 7s) + (t8n: &quot;fade-down&quot;) [[[Yes, I want to try.]] OR [[No, I can&#39;t.]]]</tw-passagedata><tw-passagedata pid="24" name="Yes, I want to try." tags="background-general" position="350,1525" size="100,100">(text-colour:red)[What is the plate number?] (input: bind $plateNumber, &quot;Enter plate number here&quot;)
 
 (link-repeat: &quot;Confirm&quot;)[
-    For confirmation, it&#39;s $plateNumber?
-
+(text-colour:red)[    For confirmation, it&#39;s $plateNumber?
+]
 (t8n-delay: 2s) + (t8n: &quot;fade-down&quot;) [[[Yes, that&#39;s right.]]]]</tw-passagedata><tw-passagedata pid="25" name="No, I can&#39;t." tags="background-general" position="450,1275" size="100,100">[[Thank you for your time, you&#39;ve been a big help.]]
 
 That&#39;s the end of the questions, it seems. I can only hope that I did the right thing, that I remembered everything and that the guy that did this to me will be caught. I can&#39;t have been wrong, right?
